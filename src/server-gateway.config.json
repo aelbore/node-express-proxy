@@ -1,0 +1,4 @@
+[
+  { "path": "/api/server-customers/*", "target": "http://localhost:3001" },
+  { "path": "/api/server-users/*", "target": "http://localhost:3002" }
+]

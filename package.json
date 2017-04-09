@@ -1,0 +1,30 @@
+{
+  "name": "node-express-proxy",
+  "version": "1.0.0",
+  "description": "Node Express with reverse proxy",
+  "main": "index.js",
+  "scripts": {
+    "concurrently": "node_modules/.bin/concurrently",
+    "start": "npm run concurrently \"node ./src/server-gateway.js\" \"node ./src/server-customers.js\" \"node ./src/server-users.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/node-express-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/node-express-proxy/issues"
+  },
+  "homepage": "https://github.com/aelbore/node-express-proxy#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "http-proxy": "^1.16.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/node": "^7.0.12",
+    "concurrently": "^3.4.0"
+  }
+}
